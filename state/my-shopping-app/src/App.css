@@ -1,0 +1,200 @@
+* {
+  background-color: #001F3F;
+  background-image: linear-gradient(45deg);
+}
+
+
+
+.main-border {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  position: fixed;
+}
+
+.section1 p {
+  width: 300px;
+  text-wrap: wrap;
+}
+
+.section2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: end;
+  text-wrap: wrap;
+  width: 30em;
+  margin-left: 600px;
+  margin-top: 50px;
+  font-size: large;
+  column-gap: 20px;
+}
+
+/*Project*/
+.main-project {
+  font-size: small;
+  margin: 40px 20px;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+}
+
+.main-project > * {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  column-gap: 10px;
+  justify-items: center;
+  text-wrap: wrap;
+  border: solid #16423c;
+  padding: 0px 10px;
+}
+
+.main-project > *:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0ff, 0 0 10px #0ff, 0 0 20px rgb(139, 158, 158),
+    0 0 40px rgb(49, 104, 147), 0 0 40px rgb(53, 91, 68);
+}
+.main-project > * .date {
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.main-project > * .tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.tools button {
+  margin: 5px;
+}
+
+/*Navbar*/
+
+/*Navbar links*/
+.link h2 {
+  font-size: 20px;
+}
+
+.link h2:hover {
+  color: #dee5d4;
+}
+
+h2:hover .Rotate {
+  width: 40px;
+  height: 40px;
+  animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Navbar*/
+
+h2 span {
+  padding: 0 10px;
+  width: 20px;
+}
+
+.link h2,
+span {
+  color: white;
+}
+
+.social-apps {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: end;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.social-apps > *{
+  color: white;
+  font-size: x-large;
+}
+
+body {
+  margin-top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*Cursor-light*/
+.cursor-light {
+  position: absolute;
+  opacity: 10%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  pointer-events: none; /* Allow the cursor to interact with elements behind it */
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+.resume {
+  font-size: 1em;
+  border: none;
+  width: 30em;
+}
+
+.resume h2{
+  width: 200px;
+}
+
+.resume button {
+  width: 100px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+}
+
+.resume button >*{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.resume button >* :hover{
+  animation: rotate 10s linear;
+  
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
